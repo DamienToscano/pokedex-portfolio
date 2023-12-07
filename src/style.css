@@ -1,0 +1,38 @@
+html,
+body,
+#root
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: ivory;
+}
+
+.r3f
+{
+    /* Avoid touch conflict with presentation controls */
+    touch-action: none;
+}
+
+.html-screen iframe
+{
+    /* Make it bigger to avoid pixelize and have the desktop view */
+    width: 1024px;
+    height: 670px;
+    border: none;
+    border-radius: 20px;
+    background: #fff;
+}
+
+/* For screen less than 900 width */
+@media (max-width: 900px)
+{
+    .html-screen iframe
+    {
+        width: 510px;
+        height: 1100px;
+        border-radius: 65px;
+    }
+}
